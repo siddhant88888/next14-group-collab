@@ -1,0 +1,20 @@
+Flow of this code:
+
+useApiMutation is called (somewhere, update later) and it 
+takes a parameter, which will probably be create 
+
+now apiMutation is assigned useMutation(mutationFunction)
+
+which means apiMutation will take any ReactMutation as a parameter
+
+apiMutation is basically the create mutation under a different 
+name
+
+Then comes mutate 
+which sets setPending to true --> This will probably be used for
+the loading screen 
+
+and the mutate through apiMutation takes the payload as the 
+parameter which will probably be in the format of the object 
+args from create --> org.id: v.string();
+                     title: v.string();
